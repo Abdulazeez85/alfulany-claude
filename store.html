@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alfulany Concept Book Store — Browse and buy books on business, design, branding and more." />
+  <title>Store — Alfulany Concept</title>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.jpeg" alt="Alfulany Concept Logo" />
+          <div class="nav-logo-text">
+            <strong>ALFULANY</strong>
+            <span>Concept</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="store.html" class="nav-store-btn active">🛍 Store</a></li>
+        </ul>
+        <div class="nav-hamburger" id="navHamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#about">About</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="store.html">🛍 Store</a>
+  </div>
+
+  <!-- ░░ PAGE HERO ░░ -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <span class="section-tag">Alfulany Bookstore</span>
+      <h1 class="section-title">Our <span>Store</span></h1>
+      <p class="section-subtitle">Curated books on business, design, branding, entrepreneurship and personal development — handpicked for Nigerian creatives.</p>
+    </div>
+  </section>
+
+  <!-- ░░ STORE ░░ -->
+  <section class="store-section">
+    <div class="container">
+      <div class="store-toolbar">
+        <div class="store-search">
+          <input type="text" id="storeSearch" placeholder="Search books..." />
+          <button>🔍</button>
+        </div>
+        <div class="store-count">
+          Showing <span id="visibleCount">12</span> books
+        </div>
+        <button class="btn btn-primary" onclick="openCart()">🛒 View Cart</button>
+      </div>
+
+      <div class="store-grid" id="storeGrid">
+
+        <div class="book-card reveal" data-cat="business">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #1a1500 0%, #2a2000 100%);">
+              <span class="book-cover-icon">📘</span>
+              <span class="book-cover-title-text">Business Mastery in Nigeria</span>
+            </div>
+            <span class="book-badge">Best Seller</span>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Business</div>
+            <div class="book-title">Business Mastery in Nigeria</div>
+            <div class="book-author">by Alfulany Press</div>
+            <div class="book-footer">
+              <div class="book-price">₦3,500</div>
+              <button class="book-btn" data-add-cart data-id="bk001" data-title="Business Mastery in Nigeria" data-price="3500" data-emoji="📘">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card reveal" data-cat="design">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #001500 0%, #002000 100%);">
+              <span class="book-cover-icon">📗</span>
+              <span class="book-cover-title-text">Design Thinking for Creatives</span>
+            </div>
+            <span class="book-badge" style="background:var(--yellow);color:var(--black)">New</span>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Design</div>
+            <div class="book-title">Design Thinking for Creatives</div>
+            <div class="book-author">by Creative Hub</div>
+            <div class="book-footer">
+              <div class="book-price">₦2,800</div>
+              <button class="book-btn" data-add-cart data-id="bk002" data-title="Design Thinking for Creatives" data-price="2800" data-emoji="📗">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card reveal" data-cat="branding">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #100010 0%, #200020 100%);">
+              <span class="book-cover-icon">📙</span>
+              <span class="book-cover-title-text">The Brand Builder's Handbook</span>
+            </div>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Branding</div>
+            <div class="book-title">The Brand Builder's Handbook</div>
+            <div class="book-author">by Mark Adeleke</div>
+            <div class="book-footer">
+              <div class="book-price">₦4,000</div>
+              <button class="book-btn" data-add-cart data-id="bk003" data-title="The Brand Builder's Handbook" data-price="4000" data-emoji="📙">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card reveal" data-cat="printing">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #1a0000 0%, #2a0000 100%);">
+              <span class="book-cover-icon">📕</span>
+              <span class="book-cover-title-text">Print Secrets Revealed</span>
+            </div>
+            <span class="book-badge" style="background:#6C63FF">Limited</span>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Printing</div>
+            <div class="book-title">Print Secrets Revealed</div>
+            <div class="book-author">by Alfulany Press</div>
+            <div class="book-footer">
+              <div class="book-price">₦5,000</div>
+              <button class="book-btn" data-add-cart data-id="bk004" data-title="Print Secrets Revealed" data-price="5000" data-emoji="📕">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card reveal" data-cat="entrepreneurship">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #001010 0%, #002020 100%);">
+              <span class="book-cover-icon">💼</span>
+              <span class="book-cover-title-text">Hustle & Thrive</span>
+            </div>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Entrepreneurship</div>
+            <div class="book-title">Hustle & Thrive: Nigerian Startup Guide</div>
+            <div class="book-author">by Emeka Obi</div>
+            <div class="book-footer">
+              <div class="book-price">₦3,200</div>
+              <button class="book-btn" data-add-cart data-id="bk005" data-title="Hustle & Thrive" data-price="3200" data-emoji="💼">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card reveal" data-cat="personal">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #0a0a1a 0%, #15152a 100%);">
+              <span class="book-cover-icon">🌟</span>
+              <span class="book-cover-title-text">Mindset Revolution</span>
+            </div>
+            <span class="book-badge" style="background:var(--yellow);color:var(--black)">Popular</span>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Personal Development</div>
+            <div class="book-title">Mindset Revolution</div>
+            <div class="book-author">by Fatima Abubakar</div>
+            <div class="book-footer">
+              <div class="book-price">₦2,500</div>
+              <button class="book-btn" data-add-cart data-id="bk006" data-title="Mindset Revolution" data-price="2500" data-emoji="🌟">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card reveal" data-cat="design">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #0a1500 0%, #152000 100%);">
+              <span class="book-cover-icon">🎨</span>
+              <span class="book-cover-title-text">Color Theory Mastery</span>
+            </div>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Design</div>
+            <div class="book-title">Color Theory Mastery</div>
+            <div class="book-author">by Design Academy</div>
+            <div class="book-footer">
+              <div class="book-price">₦3,800</div>
+              <button class="book-btn" data-add-cart data-id="bk007" data-title="Color Theory Mastery" data-price="3800" data-emoji="🎨">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card reveal" data-cat="business">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #150a00 0%, #201500 100%);">
+              <span class="book-cover-icon">💰</span>
+              <span class="book-cover-title-text">Financial Freedom Now</span>
+            </div>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Finance</div>
+            <div class="book-title">Financial Freedom Now</div>
+            <div class="book-author">by Ola Bankole</div>
+            <div class="book-footer">
+              <div class="book-price">₦4,500</div>
+              <button class="book-btn" data-add-cart data-id="bk008" data-title="Financial Freedom Now" data-price="4500" data-emoji="💰">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card reveal" data-cat="social">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #00100a 0%, #00201a 100%);">
+              <span class="book-cover-icon">📱</span>
+              <span class="book-cover-title-text">Social Media for Business</span>
+            </div>
+            <span class="book-badge" style="background:var(--magenta)">Hot</span>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Marketing</div>
+            <div class="book-title">Social Media for Nigerian Business</div>
+            <div class="book-author">by Tunde Media</div>
+            <div class="book-footer">
+              <div class="book-price">₦2,000</div>
+              <button class="book-btn" data-add-cart data-id="bk009" data-title="Social Media for Nigerian Business" data-price="2000" data-emoji="📱">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card reveal" data-cat="personal">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #0a0010 0%, #150020 100%);">
+              <span class="book-cover-icon">🙏</span>
+              <span class="book-cover-title-text">Faith & Excellence</span>
+            </div>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Faith & Lifestyle</div>
+            <div class="book-title">Faith & Excellence</div>
+            <div class="book-author">by Sheikh Ibrahim</div>
+            <div class="book-footer">
+              <div class="book-price">₦1,800</div>
+              <button class="book-btn" data-add-cart data-id="bk010" data-title="Faith & Excellence" data-price="1800" data-emoji="🙏">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card reveal" data-cat="branding">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #100500 0%, #201000 100%);">
+              <span class="book-cover-icon">🚀</span>
+              <span class="book-cover-title-text">Zero to Brand Hero</span>
+            </div>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Branding</div>
+            <div class="book-title">Zero to Brand Hero</div>
+            <div class="book-author">by Alfulany Press</div>
+            <div class="book-footer">
+              <div class="book-price">₦6,000</div>
+              <button class="book-btn" data-add-cart data-id="bk011" data-title="Zero to Brand Hero" data-price="6000" data-emoji="🚀">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-card reveal" data-cat="entrepreneurship">
+          <div class="book-cover">
+            <div class="book-cover-placeholder" style="background: linear-gradient(135deg, #001515 0%, #002020 100%);">
+              <span class="book-cover-icon">📊</span>
+              <span class="book-cover-title-text">SME Growth Blueprint</span>
+            </div>
+            <span class="book-badge" style="background:var(--yellow);color:var(--black)">New</span>
+          </div>
+          <div class="book-info">
+            <div class="book-category">Entrepreneurship</div>
+            <div class="book-title">SME Growth Blueprint</div>
+            <div class="book-author">by Alfulany Press</div>
+            <div class="book-footer">
+              <div class="book-price">₦4,200</div>
+              <button class="book-btn" data-add-cart data-id="bk012" data-title="SME Growth Blueprint" data-price="4200" data-emoji="📊">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CART PANEL ░░ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h2>YOUR CART</h2>
+      <button class="cart-close" id="cartClose">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- Rendered by cart.js -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">₦0</strong>
+      </div>
+      <div class="cart-subtotal">
+        <span>Delivery</span>
+        <strong>To be confirmed</strong>
+      </div>
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">₦0</strong>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">Checkout via WhatsApp</button>
+      <p class="checkout-note">🔒 Secure order via WhatsApp · Paystack coming soon</p>
+    </div>
+  </div>
+
+  <!-- Cart Trigger Floating Button -->
+  <button class="cart-trigger" id="cartTrigger" title="View Cart">
+    🛒
+    <span class="cart-badge" id="cartBadge" style="display:none">0</span>
+  </button>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.jpeg" alt="Alfulany Concept" />
+            <span class="footer-logo-name">ALFULANY</span>
+          </div>
+          <p>Nigeria's creative printing & branding studio. Quality prints and books, delivered with passion.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/2348000000000" title="WhatsApp">💬</a>
+            <a href="#" title="Instagram">📸</a>
+            <a href="#" title="Facebook">👍</a>
+            <a href="#" title="TikTok">🎵</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#">Business Books</a></li>
+            <li><a href="#">Design Books</a></li>
+            <li><a href="#">Branding Books</a></li>
+            <li><a href="#">Personal Dev</a></li>
+            <li><a href="#">Entrepreneurship</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">📍 Ilorin, Kwara State</a></li>
+            <li><a href="https://wa.me/2348000000000">📞 +234 800 000 0000</a></li>
+            <li><a href="mailto:hello@alfulanyconcept.com">✉️ hello@alfulanyconcept.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 <span>Alfulany Concept</span>. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348000000000" class="whatsapp-float" target="_blank" style="bottom: 100px;">
+    💬
+    <span class="whatsapp-float-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <div class="toast"></div>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    document.getElementById('navHamburger').addEventListener('click', function() {
+      this.classList.toggle('open');
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

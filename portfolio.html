@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alfulany Concept Portfolio — Browse our logos, flyers, posters, book covers, and print projects." />
+  <title>Portfolio — Alfulany Concept</title>
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.jpeg" alt="Alfulany Concept Logo" />
+          <div class="nav-logo-text">
+            <strong>ALFULANY</strong>
+            <span>Concept</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#gallery">Gallery</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="store.html" class="nav-store-btn">🛍 Store</a></li>
+        </ul>
+        <div class="nav-hamburger" id="navHamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#about">About</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="store.html">🛍 Store</a>
+  </div>
+
+  <!-- ░░ PAGE HERO ░░ -->
+  <section class="page-hero">
+    <div class="container page-hero-inner">
+      <span class="section-tag">Our Work</span>
+      <h1 class="section-title">Design <span>Portfolio</span></h1>
+      <p class="section-subtitle">Explore our diverse range of branding, printing, and design projects — each crafted with precision and passion.</p>
+    </div>
+  </section>
+
+  <!-- ░░ FILTER TABS ░░ -->
+  <section class="portfolio-filter">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All Work</button>
+        <button class="filter-tab" data-filter="logo">Logo Design</button>
+        <button class="filter-tab" data-filter="flyer">Flyers</button>
+        <button class="filter-tab" data-filter="poster">Posters</button>
+        <button class="filter-tab" data-filter="book">Book Covers</button>
+        <button class="filter-tab" data-filter="branding">Branding</button>
+        <button class="filter-tab" data-filter="print">Print Work</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PORTFOLIO GRID ░░ -->
+  <section class="portfolio-grid-section">
+    <div class="container">
+      <div class="portfolio-masonry">
+
+        <!-- LOGOS -->
+        <div class="portfolio-card reveal" data-cat="logo">
+          <div class="portfolio-card-img" data-emoji="💡" style="background: linear-gradient(135deg, #1a1a1a, #2a2a2a);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Logo Design</div>
+              <div class="portfolio-card-name">TechBrand Nigeria</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Logo Design</div>
+            <div class="portfolio-bottom-title">TechBrand Nigeria</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="flyer">
+          <div class="portfolio-card-img" data-emoji="📄" style="background: linear-gradient(135deg, #1c1a0a, #2a2500);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Flyer Design</div>
+              <div class="portfolio-card-name">Night Party Event</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Flyer Design</div>
+            <div class="portfolio-bottom-title">Night Party Event</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="book">
+          <div class="portfolio-card-img" data-emoji="📗" style="background: linear-gradient(135deg, #0a1a0a, #162516);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Book Cover</div>
+              <div class="portfolio-card-name">Entrepreneur's Edge</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Book Cover</div>
+            <div class="portfolio-bottom-title">Entrepreneur's Edge</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="branding">
+          <div class="portfolio-card-img" data-emoji="🏢" style="background: linear-gradient(135deg, #1a0a1a, #250025);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Branding</div>
+              <div class="portfolio-card-name">Halal Food Brand</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Branding</div>
+            <div class="portfolio-bottom-title">Halal Food Brand</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="print">
+          <div class="portfolio-card-img" data-emoji="☕" style="background: linear-gradient(135deg, #1a1500, #2a2000);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Print Work</div>
+              <div class="portfolio-card-name">Custom Mug Collection</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Print Work</div>
+            <div class="portfolio-bottom-title">Custom Mug Collection</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="poster">
+          <div class="portfolio-card-img" data-emoji="🎪" style="background: linear-gradient(135deg, #001a1a, #002525);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Poster</div>
+              <div class="portfolio-card-name">Concert Series Poster</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Poster</div>
+            <div class="portfolio-bottom-title">Concert Series Poster</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="logo">
+          <div class="portfolio-card-img" data-emoji="🌙" style="background: linear-gradient(135deg, #100a1a, #1a1030);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Logo Design</div>
+              <div class="portfolio-card-name">Crescent Fashion House</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Logo Design</div>
+            <div class="portfolio-bottom-title">Crescent Fashion House</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="print">
+          <div class="portfolio-card-img" data-emoji="👕" style="background: linear-gradient(135deg, #001200, #001a00);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Print Work</div>
+              <div class="portfolio-card-name">Team Jersey Batch</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Print Work</div>
+            <div class="portfolio-bottom-title">Team Jersey Batch</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="flyer">
+          <div class="portfolio-card-img" data-emoji="💍" style="background: linear-gradient(135deg, #1a1000, #251800);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Flyer Design</div>
+              <div class="portfolio-card-name">Wedding Invitation Suite</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Flyer Design</div>
+            <div class="portfolio-bottom-title">Wedding Invitation Suite</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="branding">
+          <div class="portfolio-card-img" data-emoji="🛍️" style="background: linear-gradient(135deg, #1a0a00, #251500);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Branding</div>
+              <div class="portfolio-card-name">Boutique Paper Bag Set</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Branding</div>
+            <div class="portfolio-bottom-title">Boutique Paper Bag Set</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="book">
+          <div class="portfolio-card-img" data-emoji="📕" style="background: linear-gradient(135deg, #1a0000, #250000);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Book Cover</div>
+              <div class="portfolio-card-name">Success Before 30</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Book Cover</div>
+            <div class="portfolio-bottom-title">Success Before 30</div>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal" data-cat="poster">
+          <div class="portfolio-card-img" data-emoji="🎓" style="background: linear-gradient(135deg, #001a0a, #002510);">
+          </div>
+          <div class="portfolio-card-overlay">
+            <div class="portfolio-card-info portfolio-card-meta">
+              <div class="portfolio-card-cat">Poster</div>
+              <div class="portfolio-card-name">Graduation Ceremony</div>
+            </div>
+          </div>
+          <div class="portfolio-bottom">
+            <div class="portfolio-bottom-cat">Poster</div>
+            <div class="portfolio-bottom-title">Graduation Ceremony</div>
+          </div>
+        </div>
+
+      </div>
+
+      <p style="text-align:center; color: var(--text-muted); font-size:13px; margin-top:48px; font-style: italic;">
+        📁 Add your actual project images in the <code style="color:var(--yellow)">images/portfolio/</code> folder and update the cards above.
+      </p>
+    </div>
+  </section>
+
+  <!-- ░░ LIGHTBOX ░░ -->
+  <div class="lightbox" id="lightbox">
+    <div style="position:relative;">
+      <div class="lightbox-inner">
+        <div class="lightbox-img-box">🎨</div>
+        <div class="lightbox-body">
+          <div class="lightbox-cat"></div>
+          <div class="lightbox-title"></div>
+          <p class="lightbox-desc"></p>
+        </div>
+      </div>
+      <button class="lightbox-close" id="lightboxClose">✕</button>
+    </div>
+  </div>
+
+  <!-- ░░ PORTFOLIO CTA ░░ -->
+  <section class="portfolio-cta">
+    <div class="container" style="position:relative; z-index:1;">
+      <span class="section-tag" style="display:block; text-align:center;">Work With Us</span>
+      <h2 class="section-title reveal">Ready to <span>Create</span><br>Something Amazing?</h2>
+      <p class="section-subtitle reveal" style="margin: 0 auto 48px;">
+        Whether it's a logo, a banner, or a complete brand identity — let's make it happen. Get in touch today for a free quote.
+      </p>
+      <div class="portfolio-cta-btns reveal">
+        <a href="index.html#contact" class="btn btn-primary">Get a Free Quote</a>
+        <a href="https://wa.me/2348000000000" class="btn btn-outline" target="_blank">💬 WhatsApp Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.jpeg" alt="Alfulany Concept" />
+            <span class="footer-logo-name">ALFULANY</span>
+          </div>
+          <p>Nigeria's creative printing & branding studio. We turn ideas into stunning print realities — with quality, speed, and passion.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/2348000000000" title="WhatsApp">💬</a>
+            <a href="#" title="Instagram">📸</a>
+            <a href="#" title="Facebook">👍</a>
+            <a href="#" title="TikTok">🎵</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="index.html#services">Mug Printing</a></li>
+            <li><a href="index.html#services">Logo Design</a></li>
+            <li><a href="index.html#services">Polo & Jersey</a></li>
+            <li><a href="index.html#services">Banners</a></li>
+            <li><a href="index.html#services">Book Binding</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="store.html">Book Store</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">📍 Ilorin, Kwara State</a></li>
+            <li><a href="https://wa.me/2348000000000">📞 +234 800 000 0000</a></li>
+            <li><a href="mailto:hello@alfulanyconcept.com">✉️ hello@alfulanyconcept.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 <span>Alfulany Concept</span>. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/2348000000000" class="whatsapp-float" target="_blank">
+    💬
+    <span class="whatsapp-float-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <div class="toast"></div>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('navHamburger').addEventListener('click', function() {
+      this.classList.toggle('open');
+      document.getElementById('mobileMenu').classList.toggle('open');
+    });
+    document.getElementById('lightboxClose').addEventListener('click', () => {
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  </script>
+</body>
+</html>
