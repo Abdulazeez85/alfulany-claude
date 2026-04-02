@@ -166,13 +166,15 @@ input, textarea, select { font-family: var(--font-body); }
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 72px;
 }
 .nav-logo img {
   width: 48px;
   height: 48px;
   object-fit: contain;
   border-radius: 4px;
+  
+  
 }
 .nav-logo-text {
   display: flex;
@@ -184,6 +186,7 @@ input, textarea, select { font-family: var(--font-body); }
   font-size: 22px;
   letter-spacing: 2px;
   color: var(--white);
+  padding-right: 3rem;
 }
 .nav-logo-text span {
   font-size: 9px;
@@ -281,6 +284,7 @@ input, textarea, select { font-family: var(--font-body); }
   align-items: center;
   overflow: hidden;
   background: var(--black);
+  padding-bottom: 5rem;
 }
 .hero-bg-pattern {
   position: absolute;
@@ -302,7 +306,7 @@ input, textarea, select { font-family: var(--font-body); }
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 24px;
   padding-top: var(--nav-height);
@@ -348,6 +352,7 @@ input, textarea, select { font-family: var(--font-body); }
   letter-spacing: 2px;
   color: var(--white);
   margin-bottom: 24px;
+  
 }
 .hero-title .line-yellow { color: var(--yellow); }
 .hero-title .line-outline {
@@ -431,10 +436,15 @@ input, textarea, select { font-family: var(--font-body); }
 .hero-logo-img {
   width: 240px;
   height: 240px;
+  
   object-fit: contain;
   position: relative;
   z-index: 2;
   filter: drop-shadow(0 0 40px rgba(255,212,0,0.3));
+
+}
+.hero-right .hero-logo-img{
+  border-radius: 40%;
 }
 .hero-cmyk-chips {
   position: absolute;
@@ -466,6 +476,7 @@ input, textarea, select { font-family: var(--font-body); }
   align-self: center;
   margin-left: 4px;
 }
+
 
 /* ─── ============== ABOUT ============== ─── */
 .about {
@@ -510,6 +521,7 @@ input, textarea, select { font-family: var(--font-body); }
   width: 60%;
   object-fit: contain;
   filter: drop-shadow(0 0 30px rgba(255,212,0,0.2));
+  border-radius: 20%;
 }
 .about-img-accent {
   position: absolute;
