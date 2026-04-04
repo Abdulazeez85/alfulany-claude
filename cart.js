@@ -140,7 +140,7 @@ function checkout() {
   const total = getTotal();
   const msg = `Hello Alfulany Concept! I'd like to order:\n\n${lines}\n\n*Total: ₦${total.toLocaleString()}*\n\nPlease confirm availability. Thank you!`;
   const encoded = encodeURIComponent(msg);
-  const phone = '2348000000000'; // TODO: Replace with actual WhatsApp number
+  const phone = '2348168456193'; // TODO: Replace with actual WhatsApp number
   window.open(`https://wa.me/${phone}?text=${encoded}`, '_blank');
 }
 
