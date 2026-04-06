@@ -5,9 +5,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ─── Navbar Scroll Effect ───
-  const navbar = document.getElementById('navbar');
-  const navHamburger = document.getElementById('navHamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
+  const navbar = document.querySelector('.navbar');
+  const navHamburger = document.querySelector('.navHamburger');
+  const mobileMenu = document.querySelector('.mobileMenu');
 
   if (navbar) {
     window.addEventListener('scroll', () => {
@@ -16,25 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (navHamburger && mobileMenu) {
-    // Single handler — stopPropagation prevents outside-click from firing on same tick
-    navHamburger.addEventListener('click', (e) => {
-      e.stopPropagation();
+    navHamburger.addEventListener('click', () => {
       navHamburger.classList.toggle('open');
       mobileMenu.classList.toggle('open');
     });
-    // Close when a menu link is tapped
+    // Close on link click
     mobileMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navHamburger.classList.remove('open');
         mobileMenu.classList.remove('open');
       });
-    });
-    // Close when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!navHamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
-        navHamburger.classList.remove('open');
-        mobileMenu.classList.remove('open');
-      }
     });
   }
 
